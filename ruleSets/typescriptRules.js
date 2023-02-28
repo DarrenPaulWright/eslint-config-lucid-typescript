@@ -1,4 +1,5 @@
 import typescriptPlugin from '@typescript-eslint/eslint-plugin';
+import typescriptParser from '@typescript-eslint/parser';
 import lucid from 'eslint-config-lucid';
 
 const core = lucid[1].rules;
@@ -18,6 +19,12 @@ const typescriptRules = {
 	],
 	plugins: {
 		'@typescript-eslint': typescriptPlugin
+	},
+	languageOptions: {
+		parser: typescriptParser,
+		parserOptions: {
+			project: ['./tsconfig.json']
+		}
 	},
 	rules: {
 		/**
@@ -184,10 +191,10 @@ const typescriptRules = {
 		'@typescript-eslint/method-signature-style': ['error', 'property'],
 
 		/**
-		 * @property @typescript-eslint/naming-convention=error -  Readability and maintainability.
+		 * @property @typescript-eslint/naming-convention=off - Not specific to typescript.
 		 * @memberof @typescript-eslint
 		 **/
-		'@typescript-eslint/naming-convention': 'error',
+		'@typescript-eslint/naming-convention': 'off',
 
 		'no-array-constructor': 'off',
 		'@typescript-eslint/no-array-constructor': core['no-array-constructor'],
