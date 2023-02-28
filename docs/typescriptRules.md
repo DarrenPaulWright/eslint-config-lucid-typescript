@@ -36,7 +36,7 @@
 | @typescript-eslint/member-delimiter-style | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/member-ordering | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/method-signature-style | error |   **Reasoning**:Readability and maintainability. |
-| @typescript-eslint/naming-convention | error |   **Reasoning**:Readability and maintainability. |
+| @typescript-eslint/naming-convention | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/no-base-to-string | warn |   **Reasoning**:Code Quality. |
 | @typescript-eslint/no-confusing-non-null-assertion | warn |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/no-confusing-void-expression | error |   **Reasoning**:Readability and maintainability. |
