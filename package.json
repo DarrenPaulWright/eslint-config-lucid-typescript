@@ -1,0 +1,67 @@
+{
+	"name": "eslint-config-lucid-typescript",
+	"version": "0.0.0",
+	"description": "A collection of eslint plugins for typescript with settings focused on reducing cognitive load and improving readability.",
+	"keywords": [
+		"eslint",
+		"config",
+		"node"
+	],
+	"license": "MIT",
+	"author": {
+		"name": "Darren Paul Wright",
+		"email": "Darren@DarrenPaulWright.com",
+		"url": "https://www.darrenpaulwright.com"
+	},
+	"homepage": "https://github.com/DarrenPaulWright/eslint-config-lucid-node#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DarrenPaulWright/eslint-config-lucid-node.git"
+	},
+	"bugs": {
+		"url": "https://github.com/DarrenPaulWright/eslint-config-lucid-node/issues"
+	},
+	"type": "module",
+	"main": "index.js",
+	"files": [
+		"/ruleSets"
+	],
+	"scripts": {
+		"test": "npm run lint && npm run test:plugins",
+		"test:plugins": "node node_modules\\eslint-config-lucid\\utility\\checkPluginRules.js --test",
+		"lint": "eslint **/* --config eslint.config.js --fix",
+		"check:plugins": "node node_modules\\eslint-config-lucid\\utility\\checkPluginRules.js",
+		"preversion": "npm test && npm run docs && git add --all && git diff HEAD --quiet || git commit -m \"Updating docs\"",
+		"postversion": "npm publish",
+		"postpublish": "git push --follow-tags",
+		"pre-clean": "rm -rf node_modules",
+		"clean": "npm run pre-clean && npm install && npm audit fix",
+		"update": "ncu -u && git diff --quiet || npm install && npm audit fix",
+		"update-clean": "npm run pre-clean && npm run update",
+		"update-commit": "npm run update && npm test && git add --all && git diff HEAD --quiet || git commit -m \"Updating dependencies\"",
+		"update-patch": "npm run update && npm test && git add --all && git diff HEAD --quiet || git commit -m \"Updating dependencies\" && npm version patch",
+		"docs:readme": "jsdoc2md ./index.js ruleSets/**/*.js > README.md -t node_modules\\eslint-config-lucid\\docs\\templates\\overview.hbs --plugin node_modules\\eslint-config-lucid\\docs\\templates\\overviewPlugin.cjs",
+		"docs:all": "exec-each --out docs/{basefile}.md ruleSets/**/*.js jsdoc2md -- {path} -t node_modules\\eslint-config-lucid\\docs\\templates\\docs.hbs --plugin node_modules\\eslint-config-lucid\\docs\\templates\\docsPlugin.cjs",
+		"docs": "run-p docs:*"
+	},
+	"engines": {
+		"node": "^16.0.0 || >= 18.0.0"
+	},
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.52.0",
+		"@typescript-eslint/parser": "^5.52.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.34.0",
+		"eslint-config-lucid": "^0.1.0",
+		"exec-each": "0.0.3",
+		"jsdoc-to-markdown": "^8.0.0",
+		"npm-run-all": "^4.1.5",
+		"typescript": "^4.9.5"
+	},
+	"peerDependencies": {
+		"eslint": ">=8.27.0",
+		"eslint-config-lucid": ">=0.1.0",
+		"typescript": "*"
+	}
+}
