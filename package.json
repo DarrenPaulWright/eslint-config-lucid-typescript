@@ -13,13 +13,13 @@
 		"email": "Darren@DarrenPaulWright.com",
 		"url": "https://www.darrenpaulwright.com"
 	},
-	"homepage": "https://github.com/DarrenPaulWright/eslint-config-lucid-node#readme",
+	"homepage": "https://github.com/DarrenPaulWright/eslint-config-lucid-typescript#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/DarrenPaulWright/eslint-config-lucid-node.git"
+		"url": "git+https://github.com/DarrenPaulWright/eslint-config-lucid-typescript.git"
 	},
 	"bugs": {
-		"url": "https://github.com/DarrenPaulWright/eslint-config-lucid-node/issues"
+		"url": "https://github.com/DarrenPaulWright/eslint-config-lucid-typescript/issues"
 	},
 	"type": "module",
 	"main": "index.js",
