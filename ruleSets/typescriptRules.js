@@ -387,10 +387,10 @@ const typescriptRules = {
 		'@typescript-eslint/no-throw-literal': core['no-throw-literal'],
 
 		/**
-		 * @property @typescript-eslint/no-type-alias=error - Readability and maintainability.
+		 * @property @typescript-eslint/no-type-alias=off - Arbitrary
 		 * @memberof @typescript-eslint
 		 **/
-		'@typescript-eslint/no-type-alias': 'error',
+		'@typescript-eslint/no-type-alias': 'off',
 
 		/**
 		 * @property @typescript-eslint/no-unnecessary-boolean-literal-compare=off - Not specific to typescript.
