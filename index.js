@@ -28,7 +28,20 @@ import typescriptRules from './ruleSets/typescriptRules.js';
  */
 
 const lucidTypescriptConfig = [
-	typescriptRules
+	typescriptRules,
+	{
+		files: [
+			'**/*.test.ts',
+			'**/*.spec.ts'
+		],
+		rules: {
+			'@typescript-eslint/no-unsafe-call': 'off',
+			'@typescript-eslint/no-unsafe-member-access': 'off',
+			'@typescript-eslint/init-declarations': 'off',
+			'@typescript-eslint/no-empty-function': 'off',
+			'@typescript-eslint/no-unused-vars': 'off'
+		}
+	}
 ];
 
 export default lucidTypescriptConfig;
