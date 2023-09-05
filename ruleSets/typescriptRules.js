@@ -75,6 +75,9 @@ const typescriptRules = {
 		 **/
 		'@typescript-eslint/class-literal-property-style': 'off',
 
+		'class-methods-use-this': 'off',
+		'@typescript-eslint/class-methods-use-this': core['class-methods-use-this'],
+
 		'comma-dangle': 'off',
 		'@typescript-eslint/comma-dangle': core['comma-dangle'],
 
@@ -168,6 +171,9 @@ const typescriptRules = {
 		'keyword-spacing': 'off',
 		'@typescript-eslint/keyword-spacing': core['keyword-spacing'],
 
+		'lines-around-comment': 'off',
+		'@typescript-eslint/lines-around-comment': core['lines-around-comment'],
+
 		'lines-between-class-members': 'off',
 		'@typescript-eslint/lines-between-class-members':
 			core['lines-between-class-members'],
@@ -226,6 +232,12 @@ const typescriptRules = {
 		 * @memberof @typescript-eslint
 		 **/
 		'@typescript-eslint/no-duplicate-enum-values': 'warn',
+
+		/**
+		 * @property @typescript-eslint/no-duplicate-type-constituents=error - Readability and maintainability.
+		 * @memberof @typescript-eslint
+		 **/
+		'@typescript-eslint/no-duplicate-type-constituents': 'error',
 
 		/**
 		 * @property @typescript-eslint/no-dynamic-delete=warn - Not specific to typescript.
@@ -330,6 +342,12 @@ const typescriptRules = {
 		'@typescript-eslint/no-misused-promises': 'off',
 
 		/**
+		 * @property @typescript-eslint/no-mixed-enums=error - Readability and maintainability.
+		 * @memberof @typescript-eslint
+		 **/
+		'@typescript-eslint/no-mixed-enums': 'error',
+
+		/**
 		 * @property @typescript-eslint/no-namespace=error - Readability and maintainability.
 		 * @memberof @typescript-eslint
 		 **/
@@ -385,12 +403,6 @@ const typescriptRules = {
 
 		'no-throw-literal': 'off',
 		'@typescript-eslint/no-throw-literal': core['no-throw-literal'],
-
-		/**
-		 * @property @typescript-eslint/no-type-alias=off - Arbitrary
-		 * @memberof @typescript-eslint
-		 **/
-		'@typescript-eslint/no-type-alias': 'off',
 
 		/**
 		 * @property @typescript-eslint/no-unnecessary-boolean-literal-compare=off - Not specific to typescript.
@@ -451,6 +463,12 @@ const typescriptRules = {
 		 * @memberof @typescript-eslint
 		 **/
 		'@typescript-eslint/no-unsafe-declaration-merging': 'warn',
+
+		/**
+		 * @property @typescript-eslint/no-unsafe-enum-comparison=error - Code Quality;
+		 * @memberof @typescript-eslint
+		 **/
+		'@typescript-eslint/no-unsafe-enum-comparison': 'error',
 
 		/**
 		 * @property @typescript-eslint/no-unsafe-member-access=error - Code quality.
