@@ -41,6 +41,7 @@
 | @typescript-eslint/no-confusing-non-null-assertion | warn |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/no-confusing-void-expression | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-duplicate-enum-values | warn |   **Reasoning**:Code quality. |
+| @typescript-eslint/no-duplicate-type-constituents | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-dynamic-delete | warn |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/no-empty-interface | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-explicit-any | error |   **Reasoning**:Code quality. |
@@ -54,6 +55,7 @@
 | @typescript-eslint/no-meaningless-void-operator | warn |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-misused-new | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/no-misused-promises | off |   **Reasoning**:Not specific to typescript. |
+| @typescript-eslint/no-mixed-enums | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-namespace | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-non-null-asserted-nullish-coalescing | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/no-non-null-asserted-optional-chain | off |   **Reasoning**:Not specific to typescript. |
@@ -61,7 +63,6 @@
 | @typescript-eslint/no-redundant-type-constituents | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-require-imports | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/no-this-alias | off |   **Reasoning**:Not specific to typescript. |
-| @typescript-eslint/no-type-alias | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-unnecessary-boolean-literal-compare | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/no-unnecessary-condition | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/no-unnecessary-qualifier | error |   **Reasoning**:Readability and maintainability. |
@@ -72,6 +73,7 @@
 | @typescript-eslint/no-unsafe-assignment | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-unsafe-call | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-unsafe-declaration-merging | warn |   **Reasoning**:Code quality. |
+| @typescript-eslint/no-unsafe-enum-comparison | error |   **Reasoning**:Code Quality; |
 | @typescript-eslint/no-unsafe-member-access | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-unsafe-return | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-useless-empty-export | off |   **Reasoning**:Not specific to typescript. |

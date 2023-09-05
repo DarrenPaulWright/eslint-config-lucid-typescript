@@ -13,7 +13,7 @@ which is still considered experimental.
 
 ## Installation
 First install peer dependencies:
-- [eslint](https://www.npmjs.com/package/eslint) &gt;&#x3D;8.27.0
+- [eslint](https://www.npmjs.com/package/eslint) &gt;&#x3D;8.48.0
 - [eslint-config-lucid](https://www.npmjs.com/package/eslint-config-lucid) &gt;&#x3D;0.1.0
 - [typescript](https://www.npmjs.com/package/typescript) *
 ```
