@@ -3,6 +3,7 @@ import typescriptParser from '@typescript-eslint/parser';
 import lucid from 'eslint-config-lucid';
 
 const core = lucid[1].rules;
+const babel = lucid[5].rules;
 
 /**
  * ESLint rules for [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin).
@@ -328,7 +329,8 @@ const typescriptRules = {
 		'@typescript-eslint/no-inferrable-types': 'error',
 
 		'no-invalid-this': 'off',
-		'@typescript-eslint/no-invalid-this': core['no-invalid-this'],
+		'babel/no-invalid-this': 'off',
+		'@typescript-eslint/no-invalid-this': babel['babel/no-invalid-this'],
 
 		/**
 		 * @property @typescript-eslint/no-invalid-void-type=warn - Readability and maintainability.
@@ -505,8 +507,9 @@ const typescriptRules = {
 		'@typescript-eslint/no-unsafe-return': 'error',
 
 		'no-unused-expressions': 'off',
+		'babel/no-unused-expressions': 'off',
 		'@typescript-eslint/no-unused-expressions':
-			core['no-unused-expressions'],
+			babel['babel/no-unused-expressions'],
 
 		'no-unused-vars': 'off',
 		'@typescript-eslint/no-unused-vars': core['no-unused-vars'],
@@ -537,7 +540,8 @@ const typescriptRules = {
 		'@typescript-eslint/non-nullable-type-assertion-style': 'warn',
 
 		'object-curly-spacing': 'off',
-		'@typescript-eslint/object-curly-spacing': core['object-curly-spacing'],
+		'babel/object-curly-spacing': 'off',
+		'@typescript-eslint/object-curly-spacing': babel['babel/object-curly-spacing'],
 
 		'padding-line-between-statements': 'off',
 		'@typescript-eslint/padding-line-between-statements':
@@ -652,7 +656,8 @@ const typescriptRules = {
 		'@typescript-eslint/promise-function-async': 'off',
 
 		quotes: 'off',
-		'@typescript-eslint/quotes': core.quotes,
+		'babel/quotes': 'off',
+		'@typescript-eslint/quotes': babel['babel/quotes'],
 
 		/**
 		 * @property @typescript-eslint/require-array-sort-compare=off - Not specific to typescript.
@@ -682,7 +687,8 @@ const typescriptRules = {
 		'@typescript-eslint/return-await': 'off',
 
 		semi: 'off',
-		'@typescript-eslint/semi': core.semi,
+		'babel/semi': 'off',
+		'@typescript-eslint/semi': babel['babel/semi'],
 
 		/**
 		 * @property @typescript-eslint/sort-type-constituents=off - Arbitrary.
