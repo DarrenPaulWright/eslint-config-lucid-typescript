@@ -188,7 +188,29 @@ const typescriptRules = {
 		 * @property @typescript-eslint/member-ordering=error - Readability and maintainability.
 		 * @memberof @typescript-eslint
 		 **/
-		'@typescript-eslint/member-ordering': 'error',
+		'@typescript-eslint/member-ordering': [
+			'error',
+			{
+				default: [
+					'static-field',
+					'static-method',
+
+					'#private-field',
+					'private-field',
+					'protected-field',
+					'field',
+
+					'constructor',
+
+					'#private-method',
+					'private-method',
+					'protected-method',
+					'abstract-method',
+
+					'method'
+				]
+			}
+		],
 
 		/**
 		 * @property @typescript-eslint/method-signature-style=error - Readability and maintainability.
