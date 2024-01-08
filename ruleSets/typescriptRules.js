@@ -3,7 +3,7 @@ import typescriptParser from '@typescript-eslint/parser';
 import lucid from 'eslint-config-lucid';
 
 const core = lucid[1].rules;
-const babel = lucid[5].rules;
+const babel = lucid[7].rules;
 
 /**
  * ESLint rules for [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin).
