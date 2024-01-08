@@ -33,7 +33,6 @@
 | @typescript-eslint/explicit-function-return-type | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/explicit-member-accessibility | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/explicit-module-boundary-types | error |   **Reasoning**:Readability and maintainability. |
-| @typescript-eslint/member-delimiter-style | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/member-ordering | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/method-signature-style | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/naming-convention | off |   **Reasoning**:Not specific to typescript. |
@@ -76,7 +75,9 @@
 | @typescript-eslint/no-unsafe-enum-comparison | error |   **Reasoning**:Code Quality; |
 | @typescript-eslint/no-unsafe-member-access | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-unsafe-return | error |   **Reasoning**:Code quality. |
+| @typescript-eslint/no-unsafe-unary-minus | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-useless-empty-export | off |   **Reasoning**:Not specific to typescript. |
+| @typescript-eslint/no-useless-template-literals | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-var-requires | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/non-nullable-type-assertion-style | warn |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/parameter-properties | off |   **Reasoning**:Arbitrary. |
@@ -105,7 +106,6 @@
 | @typescript-eslint/strict-boolean-expressions | off |   **Reasoning**:Arbitrary. |
 | @typescript-eslint/switch-exhaustiveness-check | off |   **Reasoning**:Arbitrary. |
 | @typescript-eslint/triple-slash-reference | error |   **Reasoning**:Readability and maintainability. |
-| @typescript-eslint/type-annotation-spacing | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/typedef | off |   **Reasoning**:Handled by compiler. |
 | @typescript-eslint/unbound-method | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/unified-signatures | off |   **Reasoning**:Arbitrary. |
