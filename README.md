@@ -14,10 +14,9 @@ which is still considered experimental.
 ## Installation
 First install peer dependencies:
 - [eslint](https://www.npmjs.com/package/eslint) &gt;&#x3D;8.56.0
-- [eslint-config-lucid](https://www.npmjs.com/package/eslint-config-lucid) &gt;&#x3D;0.2.0
 - [typescript](https://www.npmjs.com/package/typescript) *
 ```
-npm i eslint eslint-config-lucid typescript 
+npm i eslint typescript 
 ```
 Next, install eslint-config-lucid-typescript:
 ```
