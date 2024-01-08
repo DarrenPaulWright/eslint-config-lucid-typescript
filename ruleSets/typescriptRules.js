@@ -64,12 +64,6 @@ const typescriptRules = {
 		 **/
 		'@typescript-eslint/ban-types': 'error',
 
-		'block-spacing': 'off',
-		'@typescript-eslint/block-spacing': core['block-spacing'],
-
-		'brace-style': 'off',
-		'@typescript-eslint/brace-style': core['brace-style'],
-
 		/**
 		 * @property @typescript-eslint/class-literal-property-style=off - Arbitrary.
 		 * @memberof @typescript-eslint
@@ -78,12 +72,6 @@ const typescriptRules = {
 
 		'class-methods-use-this': 'off',
 		'@typescript-eslint/class-methods-use-this': core['class-methods-use-this'],
-
-		'comma-dangle': 'off',
-		'@typescript-eslint/comma-dangle': core['comma-dangle'],
-
-		'comma-spacing': 'off',
-		'@typescript-eslint/comma-spacing': core['comma-spacing'],
 
 		/**
 		 * @property @typescript-eslint/consistent-generic-constructors=error - Readability and maintainability.
@@ -157,33 +145,11 @@ const typescriptRules = {
 		 **/
 		'@typescript-eslint/explicit-module-boundary-types': 'error',
 
-		'func-call-spacing': 'off',
-		'@typescript-eslint/func-call-spacing': core['func-call-spacing'],
-
-		indent: 'off',
-		'@typescript-eslint/indent': core.indent,
-
 		'init-declarations': 'off',
 		'@typescript-eslint/init-declarations': core['init-declarations'],
 
-		'key-spacing': 'off',
-		'@typescript-eslint/key-spacing': core['key-spacing'],
-
-		'keyword-spacing': 'off',
-		'@typescript-eslint/keyword-spacing': core['keyword-spacing'],
-
-		'lines-around-comment': 'off',
-		'@typescript-eslint/lines-around-comment': core['lines-around-comment'],
-
-		'lines-between-class-members': 'off',
-		'@typescript-eslint/lines-between-class-members':
-			core['lines-between-class-members'],
-
-		/**
-		 * @property @typescript-eslint/member-delimiter-style=error - Readability and maintainability.
-		 * @memberof @typescript-eslint
-		 **/
-		'@typescript-eslint/member-delimiter-style': 'error',
+		'max-params': 'off',
+		'@typescript-eslint/max-params': core['max-params'],
 
 		/**
 		 * @property @typescript-eslint/member-ordering=error - Readability and maintainability.
@@ -288,12 +254,6 @@ const typescriptRules = {
 		 * @memberof @typescript-eslint
 		 **/
 		'@typescript-eslint/no-extra-non-null-assertion': 'off',
-
-		'no-extra-parens': 'off',
-		'@typescript-eslint/no-extra-parens': core['no-extra-parens'],
-
-		'no-extra-semi': 'off',
-		'@typescript-eslint/no-extra-semi': core['no-extra-semi'],
 
 		/**
 		 * @property @typescript-eslint/no-extraneous-class=warn - Not specific to typescript.
@@ -506,6 +466,12 @@ const typescriptRules = {
 		 **/
 		'@typescript-eslint/no-unsafe-return': 'error',
 
+		/**
+		 * @property @typescript-eslint/no-unsafe-unary-minus=error - Code quality.
+		 * @memberof @typescript-eslint
+		 **/
+		'@typescript-eslint/no-unsafe-unary-minus': 'error',
+
 		'no-unused-expressions': 'off',
 		'babel/no-unused-expressions': 'off',
 		'@typescript-eslint/no-unused-expressions':
@@ -528,6 +494,12 @@ const typescriptRules = {
 		'@typescript-eslint/no-useless-empty-export': 'off',
 
 		/**
+		 * @property @typescript-eslint/no-useless-template-literals=error - Code quality.
+		 * @memberof @typescript-eslint
+		 **/
+		'@typescript-eslint/no-useless-template-literals': 'error',
+
+		/**
 		 * @property @typescript-eslint/no-var-requires=off - Not specific to typescript.
 		 * @memberof @typescript-eslint
 		 **/
@@ -538,14 +510,6 @@ const typescriptRules = {
 		 * @memberof @typescript-eslint
 		 **/
 		'@typescript-eslint/non-nullable-type-assertion-style': 'warn',
-
-		'object-curly-spacing': 'off',
-		'babel/object-curly-spacing': 'off',
-		'@typescript-eslint/object-curly-spacing': babel['babel/object-curly-spacing'],
-
-		'padding-line-between-statements': 'off',
-		'@typescript-eslint/padding-line-between-statements':
-			core['padding-line-between-statements'],
 
 		/**
 		 * @property @typescript-eslint/parameter-properties=off - Arbitrary.
@@ -558,6 +522,9 @@ const typescriptRules = {
 		 * @memberof @typescript-eslint
 		 **/
 		'@typescript-eslint/prefer-as-const': 'error',
+
+		'prefer-destructuring': 'off',
+		'@typescript-eslint/prefer-destructuring': core['prefer-destructuring'],
 
 		/**
 		 * @property @typescript-eslint/prefer-enum-initializers=error - Code Quality.
@@ -655,10 +622,6 @@ const typescriptRules = {
 		 **/
 		'@typescript-eslint/promise-function-async': 'off',
 
-		quotes: 'off',
-		'babel/quotes': 'off',
-		'@typescript-eslint/quotes': babel['babel/quotes'],
-
 		/**
 		 * @property @typescript-eslint/require-array-sort-compare=off - Not specific to typescript.
 		 * @memberof @typescript-eslint
@@ -686,25 +649,11 @@ const typescriptRules = {
 		 **/
 		'@typescript-eslint/return-await': 'off',
 
-		semi: 'off',
-		'babel/semi': 'off',
-		'@typescript-eslint/semi': babel['babel/semi'],
-
 		/**
 		 * @property @typescript-eslint/sort-type-constituents=off - Arbitrary.
 		 * @memberof @typescript-eslint
 		 **/
 		'@typescript-eslint/sort-type-constituents': 'off',
-
-		'space-before-blocks': 'off',
-		'@typescript-eslint/space-before-blocks': core['space-before-blocks'],
-
-		'space-before-function-paren': 'off',
-		'@typescript-eslint/space-before-function-paren':
-			core['space-before-function-paren'],
-
-		'space-infix-ops': 'off',
-		'@typescript-eslint/space-infix-ops': core['space-infix-ops'],
 
 		/**
 		 * @property @typescript-eslint/strict-boolean-expressions=off - Arbitrary.
@@ -723,20 +672,6 @@ const typescriptRules = {
 		 * @memberof @typescript-eslint
 		 **/
 		'@typescript-eslint/triple-slash-reference': 'error',
-
-		/**
-		 * @property @typescript-eslint/type-annotation-spacing=error - Readability and maintainability.
-		 * @memberof @typescript-eslint
-		 **/
-		'@typescript-eslint/type-annotation-spacing': ['error', {
-			before: false,
-			after: true,
-			overrides: {
-				arrow: {
-					before: true
-				}
-			}
-		}],
 
 		/**
 		 * @property @typescript-eslint/typedef=off - Handled by compiler.
