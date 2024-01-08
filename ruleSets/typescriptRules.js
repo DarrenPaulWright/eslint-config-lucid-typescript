@@ -374,7 +374,7 @@ const typescriptRules = {
 		'@typescript-eslint/no-restricted-imports':
 			core['no-restricted-imports'],
 
-		'no-return-await': core['no-return-await'],
+		'no-return-await': 'off',
 
 		'no-shadow': 'off',
 		'@typescript-eslint/no-shadow': core['no-shadow'],

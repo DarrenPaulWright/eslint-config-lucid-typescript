@@ -1,7 +1,7 @@
 import stylisticPlusPlugin from '@stylistic/eslint-plugin-plus';
-import lucid from '../../eslint-config-lucid/index.js';
+import lucid from 'eslint-config-lucid';
 
-const stylisticJs = lucid[2].rules;
+const stylisticPlus = lucid[3].rules;
 
 /**
  * ESLint rules for [@stylistic/eslint-plugin-plus](https://www.npmjs.com/package/@stylistic/eslint-plugin-plus).
@@ -18,7 +18,7 @@ export default {
 		'@stylistic/plus': stylisticPlusPlugin
 	},
 	rules: {
-		'@stylistic/plus/indent-binary-ops': stylisticJs['@stylistic/plus/indent-binary-ops'],
+		'@stylistic/plus/indent-binary-ops': stylisticPlus['@stylistic/plus/indent-binary-ops'],
 
 		/**
 		 * This rule enforces consistent spacing inside TypeScript type generics.
