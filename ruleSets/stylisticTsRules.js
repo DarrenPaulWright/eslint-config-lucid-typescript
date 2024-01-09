@@ -74,6 +74,7 @@ export default {
 		'@stylistic/js/quotes': 'off',
 		'@stylistic/ts/quotes': stylisticJs['@stylistic/js/quotes'],
 
+		'babel/semi': 'off',
 		'@stylistic/js/semi': 'off',
 		'@stylistic/ts/semi': stylisticJs['@stylistic/js/semi'],
 
