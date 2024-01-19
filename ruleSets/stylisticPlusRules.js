@@ -7,16 +7,13 @@ const stylisticPlus = lucid[3].rules;
  * ESLint rules for [@stylistic/eslint-plugin-plus](https://www.npmjs.com/package/@stylistic/eslint-plugin-plus).
  *
  * @namespace @stylistic/plus
- * @property files .ts, .tsx
+ * @property files - .ts, .tsx
  **/
 export default {
 	files: [
 		'**/*.ts',
 		'**/*.tsx'
 	],
-	plugins: {
-		'@stylistic/plus': stylisticPlusPlugin
-	},
 	rules: {
 		'@stylistic/plus/indent-binary-ops': stylisticPlus['@stylistic/plus/indent-binary-ops'],
 
@@ -25,7 +22,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/plus/type-generic-spacing}
 		 *
 		 * @property @stylistic/plus/type-generic-spacing=error - Readability.
-		 * @memberof @stylistic/plus
+		 * @memberOf @stylistic/plus
 		 **/
 		'@stylistic/plus/type-generic-spacing': 'error',
 
@@ -34,7 +31,7 @@ export default {
 		 * @see {@link https://eslint.style/rules/plus/type-named-tuple-spacing}
 		 *
 		 * @property @stylistic/plus/type-named-tuple-spacing=error - Readability.
-		 * @memberof @stylistic/plus
+		 * @memberOf @stylistic/plus
 		 **/
 		'@stylistic/plus/type-named-tuple-spacing': 'error'
 	}

@@ -9,7 +9,7 @@ const stylisticJs = lucid[2].rules;
  * are omitted from this page.
  *
  * @namespace @stylistic/ts
- * @property files .ts, .tsx
+ * @property files - .ts, .tsx
  **/
 export default {
 	files: [
@@ -54,7 +54,7 @@ export default {
 
 		/**
 		 * @property @stylistic/ts/member-delimiter-style=error - Readability and maintainability.
-		 * @memberof @stylistic/ts
+		 * @memberOf @stylistic/ts
 		 **/
 		'@stylistic/ts/member-delimiter-style': 'error',
 
@@ -90,7 +90,7 @@ export default {
 
 		/**
 		 * @property @stylistic/ts/type-annotation-spacing=error - Readability and maintainability.
-		 * @memberof @stylistic/ts
+		 * @memberOf @stylistic/ts
 		 **/
 		'@stylistic/ts/type-annotation-spacing': ['error', {
 			before: false,

@@ -1,3 +1,4 @@
+import jsdocTypescriptRules from './ruleSets/jsdocTypescriptRules.js';
 import stylisticPlusRules from './ruleSets/stylisticPlusRules.js';
 import stylisticTsRules from './ruleSets/stylisticTsRules.js';
 import typescriptRules from './ruleSets/typescriptRules.js';
@@ -33,6 +34,7 @@ const lucidTypescriptConfig = [
 	typescriptRules,
 	stylisticTsRules,
 	stylisticPlusRules,
+	jsdocTypescriptRules,
 	{
 		files: [
 			'**/*.test.ts',
