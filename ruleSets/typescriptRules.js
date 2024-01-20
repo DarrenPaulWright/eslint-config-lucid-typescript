@@ -195,6 +195,12 @@ const typescriptRules = {
 		'@typescript-eslint/no-array-constructor': core['no-array-constructor'],
 
 		/**
+		 * @property @typescript-eslint/no-array-delete=error - Code Quality.
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/no-array-delete': 'error',
+
+		/**
 		 * @property @typescript-eslint/no-base-to-string=warn - Code Quality.
 		 * @memberOf @typescript-eslint
 		 **/
@@ -573,6 +579,9 @@ const typescriptRules = {
 		 * @memberOf @typescript-eslint
 		 **/
 		'@typescript-eslint/prefer-optional-chain': 'off',
+
+		'prefer-promise-reject-errors': 'off',
+		'@typescript-eslint/prefer-promise-reject-errors': core['prefer-promise-reject-errors'],
 
 		/**
 		 * @property @typescript-eslint/prefer-readonly=off - Arbitrary.

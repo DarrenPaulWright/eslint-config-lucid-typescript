@@ -49,14 +49,17 @@
 		"node": "^16.0.0 || >= 18.0.0"
 	},
 	"dependencies": {
-		"@stylistic/eslint-plugin-plus": "^1.5.3",
-		"@stylistic/eslint-plugin-ts": "^1.5.3",
-		"@typescript-eslint/eslint-plugin": "^6.18.0",
-		"@typescript-eslint/parser": "^6.18.0",
-		"eslint-config-lucid": "^0.2.1"
+		"@stylistic/eslint-plugin-plus": "^1.5.4",
+		"@stylistic/eslint-plugin-ts": "^1.5.4",
+		"@typescript-eslint/eslint-plugin": "^6.19.0",
+		"@typescript-eslint/parser": "^6.19.0",
+		"eslint-config-lucid": "^0.3.1"
 	},
 	"devDependencies": {
+		"chalk": "^5.3.0",
+		"change-case": "^5.4.1",
 		"display-value": "^2.2.0",
+		"dmd-readable": "^1.2.4",
 		"eslint": "^8.56.0",
 		"exec-each": "0.0.3",
 		"jsdoc-to-markdown": "^8.0.0",

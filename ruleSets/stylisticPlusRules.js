@@ -1,4 +1,3 @@
-import stylisticPlusPlugin from '@stylistic/eslint-plugin-plus';
 import lucid from 'eslint-config-lucid';
 
 const stylisticPlus = lucid[3].rules;
