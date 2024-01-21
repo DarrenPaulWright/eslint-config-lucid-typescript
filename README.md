@@ -7,7 +7,6 @@
 
 ## Disclaimer
 Lucid only supports the new flat config that shipped with ESLint v8.21.0
-which is still considered experimental.
 
 <br><a name="Installation"></a>
 
