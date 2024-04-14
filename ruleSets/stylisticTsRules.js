@@ -2,6 +2,7 @@ import stylisticTsPlugin from '@stylistic/eslint-plugin-ts';
 import lucid from '../../eslint-config-lucid/index.js';
 
 const stylisticJs = lucid[2].rules;
+const babel = lucid[7].rules;
 
 /**
  * ESLint rules for [@stylistic/eslint-plugin-ts](https://www.npmjs.com/package/@stylistic/eslint-plugin-ts).
@@ -76,7 +77,7 @@ export default {
 
 		'babel/semi': 'off',
 		'@stylistic/js/semi': 'off',
-		'@stylistic/ts/semi': stylisticJs['@stylistic/js/semi'],
+		'@stylistic/ts/semi': babel['babel/semi'],
 
 		'@stylistic/js/space-before-blocks': 'off',
 		'@stylistic/ts/space-before-blocks': stylisticJs['@stylistic/js/space-before-blocks'],
