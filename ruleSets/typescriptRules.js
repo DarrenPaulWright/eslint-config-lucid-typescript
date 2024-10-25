@@ -59,12 +59,6 @@ const typescriptRules = {
 		'@typescript-eslint/ban-tslint-comment': 'error',
 
 		/**
-		 * @property @typescript-eslint/ban-types=error - Readability and maintainability.
-		 * @memberOf @typescript-eslint
-		 **/
-		'@typescript-eslint/ban-types': 'error',
-
-		/**
 		 * @property @typescript-eslint/class-literal-property-style=off - Arbitrary.
 		 * @memberOf @typescript-eslint
 		 **/
@@ -80,11 +74,10 @@ const typescriptRules = {
 		'@typescript-eslint/consistent-generic-constructors': 'error',
 
 		/**
-		 * @property @typescript-eslint/consistent-indexed-object-style=error - Readability and maintainability.
+		 * @property @typescript-eslint/consistent-indexed-object-style=off - Each style has its own merits and features.
 		 * @memberOf @typescript-eslint
 		 **/
-		'@typescript-eslint/consistent-indexed-object-style': ['error',
-			'index-signature'],
+		'@typescript-eslint/consistent-indexed-object-style': 'off',
 
 		/**
 		 * @property @typescript-eslint/consistent-type-assertions=error - Readability and maintainability.
@@ -244,12 +237,6 @@ const typescriptRules = {
 		'@typescript-eslint/no-empty-function': core['no-empty-function'],
 
 		/**
-		 * @property @typescript-eslint/no-empty-interface=error - Readability and maintainability.
-		 * @memberOf @typescript-eslint
-		 **/
-		'@typescript-eslint/no-empty-interface': 'error',
-
-		/**
 		 * @property @typescript-eslint/no-explicit-any=error - Code quality.
 		 * @memberOf @typescript-eslint
 		 **/
@@ -306,9 +293,6 @@ const typescriptRules = {
 
 		'no-loop-func': 'off',
 		'@typescript-eslint/no-loop-func': core['no-loop-func'],
-
-		'no-loss-of-precision': 'off',
-		'@typescript-eslint/no-loss-of-precision': core['no-loss-of-precision'],
 
 		'no-magic-numbers': 'off',
 		'@typescript-eslint/no-magic-numbers': core['no-magic-numbers'],
@@ -390,9 +374,6 @@ const typescriptRules = {
 		 * @memberOf @typescript-eslint
 		 **/
 		'@typescript-eslint/no-this-alias': 'off',
-
-		'no-throw-literal': 'off',
-		'@typescript-eslint/no-throw-literal': core['no-throw-literal'],
 
 		/**
 		 * @property @typescript-eslint/no-unnecessary-boolean-literal-compare=off - Not specific to typescript.
@@ -498,18 +479,6 @@ const typescriptRules = {
 		 * @memberOf @typescript-eslint
 		 **/
 		'@typescript-eslint/no-useless-empty-export': 'off',
-
-		/**
-		 * @property @typescript-eslint/no-useless-template-literals=error - Code quality.
-		 * @memberOf @typescript-eslint
-		 **/
-		'@typescript-eslint/no-useless-template-literals': 'error',
-
-		/**
-		 * @property @typescript-eslint/no-var-requires=off - Not specific to typescript.
-		 * @memberOf @typescript-eslint
-		 **/
-		'@typescript-eslint/no-var-requires': 'off',
 
 		/**
 		 * @property @typescript-eslint/non-nullable-type-assertion-style=warn - Readability and maintainability.
@@ -620,12 +589,6 @@ const typescriptRules = {
 		'@typescript-eslint/prefer-string-starts-ends-with': 'off',
 
 		/**
-		 * @property @typescript-eslint/prefer-ts-expect-error=warn - Readability and maintainability.
-		 * @memberOf @typescript-eslint
-		 **/
-		'@typescript-eslint/prefer-ts-expect-error': 'warn',
-
-		/**
 		 * @property @typescript-eslint/promise-function-async=off - Not specific to typescript.
 		 * @memberOf @typescript-eslint
 		 **/
@@ -657,12 +620,6 @@ const typescriptRules = {
 		 * @memberOf @typescript-eslint
 		 **/
 		'@typescript-eslint/return-await': 'off',
-
-		/**
-		 * @property @typescript-eslint/sort-type-constituents=off - Arbitrary.
-		 * @memberOf @typescript-eslint
-		 **/
-		'@typescript-eslint/sort-type-constituents': 'off',
 
 		/**
 		 * @property @typescript-eslint/strict-boolean-expressions=off - Arbitrary.
@@ -698,7 +655,76 @@ const typescriptRules = {
 		 * @property @typescript-eslint/unified-signatures=off - Arbitrary.
 		 * @memberOf @typescript-eslint
 		 **/
-		'@typescript-eslint/unified-signatures': 'off'
+		'@typescript-eslint/unified-signatures': 'off',
+
+		/**
+		 * @property @typescript-eslint/consistent-return=off - Covered by tsconfig's noImplicitReturns.
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/consistent-return': 'off',
+
+		/**
+		 * @property @typescript-eslint/no-deprecated=error - Code Quality.
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/no-deprecated': 'error',
+
+		/**
+		 * @property @typescript-eslint/no-empty-object-type=error - Readability.
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/no-empty-object-type': 'error',
+
+		/**
+		 * @property @typescript-eslint/no-restricted-types=off - For use in specific projects.
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/no-restricted-types': 'off',
+
+		/**
+		 * @property @typescript-eslint/no-unnecessary-parameter-property-assignment=error - Code Quality.
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/no-unnecessary-parameter-property-assignment': 'error',
+
+		/**
+		 * @property @typescript-eslint/no-unnecessary-template-expression=error - Code Quality.
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/no-unnecessary-template-expression': 'error',
+
+		/**
+		 * @property @typescript-eslint/no-unnecessary-type-parameters=error - Code Quality.
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/no-unnecessary-type-parameters': 'error',
+
+		/**
+		 * @property @typescript-eslint/no-unsafe-function-type=error - Code Quality.
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/no-unsafe-function-type': 'error',
+
+		/**
+		 * @property @typescript-eslint/no-wrapper-object-types=error - Code Quality.
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/no-wrapper-object-types': 'error',
+
+		'no-throw-literal': 'off',
+		'@typescript-eslint/only-throw-error': 'error',
+
+		/**
+		 * @property @typescript-eslint/prefer-find=error - Code Quality.
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/prefer-find': 'error',
+
+		/**
+		 * @property @typescript-eslint/use-unknown-in-catch-callback-variable=off
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/use-unknown-in-catch-callback-variable': 'off'
 	}
 };
 

@@ -101,6 +101,15 @@ export default {
 					before: true
 				}
 			}
-		}]
+		}],
+
+		'@stylistic/js/object-curly-newline': 'off',
+		'@stylistic/ts/object-curly-newline': stylisticJs['@stylistic/js/object-curly-newline'],
+
+		'@stylistic/js/object-property-newline': 'off',
+		'@stylistic/ts/object-property-newline': stylisticJs['@stylistic/js/object-property-newline'],
+
+		'@stylistic/js/quote-props': 'off',
+		'@stylistic/ts/quote-props': stylisticJs['@stylistic/js/quote-props']
 	}
 };
