@@ -22,10 +22,9 @@
 | @typescript-eslint/await-thenable | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/ban-ts-comment | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/ban-tslint-comment | error |   **Reasoning**:Consistency. |
-| @typescript-eslint/ban-types | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/class-literal-property-style | off |   **Reasoning**:Arbitrary. |
 | @typescript-eslint/consistent-generic-constructors | error |   **Reasoning**:Readability and maintainability. |
-| @typescript-eslint/consistent-indexed-object-style | error |   **Reasoning**:Readability and maintainability. |
+| @typescript-eslint/consistent-indexed-object-style | off |   **Reasoning**:Each style has its own merits and features. |
 | @typescript-eslint/consistent-type-assertions | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/consistent-type-definitions | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/consistent-type-exports | error |   **Reasoning**:Code quality. |
@@ -43,7 +42,6 @@
 | @typescript-eslint/no-duplicate-enum-values | warn |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-duplicate-type-constituents | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-dynamic-delete | warn |   **Reasoning**:Not specific to typescript. |
-| @typescript-eslint/no-empty-interface | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-explicit-any | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-extra-non-null-assertion | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/no-extraneous-class | warn |   **Reasoning**:Not specific to typescript. |
@@ -78,8 +76,6 @@
 | @typescript-eslint/no-unsafe-return | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-unsafe-unary-minus | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-useless-empty-export | off |   **Reasoning**:Not specific to typescript. |
-| @typescript-eslint/no-useless-template-literals | error |   **Reasoning**:Code quality. |
-| @typescript-eslint/no-var-requires | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/non-nullable-type-assertion-style | warn |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/parameter-properties | off |   **Reasoning**:Arbitrary. |
 | @typescript-eslint/prefer-as-const | error |   **Reasoning**:Readability and maintainability. |
@@ -97,16 +93,25 @@
 | @typescript-eslint/prefer-regexp-exec | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/prefer-return-this-type | warn |   **Reasoning**:Code quality. |
 | @typescript-eslint/prefer-string-starts-ends-with | off |   **Reasoning**:Not specific to typescript. |
-| @typescript-eslint/prefer-ts-expect-error | warn |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/promise-function-async | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/require-array-sort-compare | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/restrict-plus-operands | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/restrict-template-expressions | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/return-await | off |   **Reasoning**:Not specific to typescript. |
-| @typescript-eslint/sort-type-constituents | off |   **Reasoning**:Arbitrary. |
 | @typescript-eslint/strict-boolean-expressions | off |   **Reasoning**:Arbitrary. |
 | @typescript-eslint/switch-exhaustiveness-check | off |   **Reasoning**:Arbitrary. |
 | @typescript-eslint/triple-slash-reference | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/typedef | off |   **Reasoning**:Handled by compiler. |
 | @typescript-eslint/unbound-method | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/unified-signatures | off |   **Reasoning**:Arbitrary. |
+| @typescript-eslint/consistent-return | off |   **Reasoning**:Covered by tsconfig's noImplicitReturns. |
+| @typescript-eslint/no-deprecated | error |   **Reasoning**:Code Quality. |
+| @typescript-eslint/no-empty-object-type | error |   **Reasoning**:Readability. |
+| @typescript-eslint/no-restricted-types | off |   **Reasoning**:For use in specific projects. |
+| @typescript-eslint/no-unnecessary-parameter-property-assignment | error |   **Reasoning**:Code Quality. |
+| @typescript-eslint/no-unnecessary-template-expression | error |   **Reasoning**:Code Quality. |
+| @typescript-eslint/no-unnecessary-type-parameters | error |   **Reasoning**:Code Quality. |
+| @typescript-eslint/no-unsafe-function-type | error |   **Reasoning**:Code Quality. |
+| @typescript-eslint/no-wrapper-object-types | error |   **Reasoning**:Code Quality. |
+| @typescript-eslint/prefer-find | error |   **Reasoning**:Code Quality. |
+| @typescript-eslint/use-unknown-in-catch-callback-variable | off |    |
