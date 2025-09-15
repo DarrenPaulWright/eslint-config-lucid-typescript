@@ -53,6 +53,7 @@
 | @typescript-eslint/no-meaningless-void-operator | warn |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-misused-new | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/no-misused-promises | off |   **Reasoning**:Not specific to typescript. |
+| @typescript-eslint/no-misused-spread | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-mixed-enums | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-namespace | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-non-null-asserted-nullish-coalescing | off |   **Reasoning**:Not specific to typescript. |
@@ -67,6 +68,7 @@
 | @typescript-eslint/no-unnecessary-type-arguments | warn |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-unnecessary-type-assertion | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-unnecessary-type-constraint | error |   **Reasoning**:Readability and maintainability. |
+| @typescript-eslint/no-unnecessary-type-conversion | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-unsafe-argument | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-unsafe-assignment | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-unsafe-call | error |   **Reasoning**:Code quality. |
@@ -74,6 +76,7 @@
 | @typescript-eslint/no-unsafe-enum-comparison | error |   **Reasoning**:Code Quality; |
 | @typescript-eslint/no-unsafe-member-access | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-unsafe-return | error |   **Reasoning**:Code quality. |
+| @typescript-eslint/no-unsafe-type-assertion | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/no-unsafe-unary-minus | error |   **Reasoning**:Code quality. |
 | @typescript-eslint/no-useless-empty-export | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/non-nullable-type-assertion-style | warn |   **Reasoning**:Readability and maintainability. |
@@ -94,6 +97,7 @@
 | @typescript-eslint/prefer-return-this-type | warn |   **Reasoning**:Code quality. |
 | @typescript-eslint/prefer-string-starts-ends-with | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/promise-function-async | off |   **Reasoning**:Not specific to typescript. |
+| @typescript-eslint/related-getter-setter-pairs | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/require-array-sort-compare | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/restrict-plus-operands | off |   **Reasoning**:Not specific to typescript. |
 | @typescript-eslint/restrict-template-expressions | off |   **Reasoning**:Not specific to typescript. |
@@ -101,7 +105,6 @@
 | @typescript-eslint/strict-boolean-expressions | off |   **Reasoning**:Arbitrary. |
 | @typescript-eslint/switch-exhaustiveness-check | off |   **Reasoning**:Arbitrary. |
 | @typescript-eslint/triple-slash-reference | error |   **Reasoning**:Readability and maintainability. |
-| @typescript-eslint/typedef | off |   **Reasoning**:Handled by compiler. |
 | @typescript-eslint/unbound-method | error |   **Reasoning**:Readability and maintainability. |
 | @typescript-eslint/unified-signatures | off |   **Reasoning**:Arbitrary. |
 | @typescript-eslint/consistent-return | off |   **Reasoning**:Covered by tsconfig's noImplicitReturns. |
