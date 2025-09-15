@@ -1,6 +1,5 @@
 import jsdocTypescriptRules from './ruleSets/jsdocTypescriptRules.js';
-import stylisticPlusRules from './ruleSets/stylisticPlusRules.js';
-import stylisticTsRules from './ruleSets/stylisticTsRules.js';
+import stylisticRules from './ruleSets/stylisticRules.js';
 import typescriptRules from './ruleSets/typescriptRules.js';
 
 /**
@@ -31,8 +30,7 @@ import typescriptRules from './ruleSets/typescriptRules.js';
 
 const lucidTypescriptConfig = [
 	typescriptRules,
-	stylisticTsRules,
-	stylisticPlusRules,
+	stylisticRules,
 	jsdocTypescriptRules,
 	{
 		files: [

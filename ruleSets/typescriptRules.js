@@ -3,7 +3,7 @@ import typescriptParser from '@typescript-eslint/parser';
 import lucid from 'eslint-config-lucid';
 
 const core = lucid[1].rules;
-const babel = lucid[7].rules;
+const babel = lucid[6].rules;
 
 /**
  * ESLint rules for [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin).
@@ -316,6 +316,12 @@ const typescriptRules = {
 		'@typescript-eslint/no-misused-promises': 'off',
 
 		/**
+		 * @property @typescript-eslint/no-misused-spread=error - Code quality.
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/no-misused-spread': 'error',
+
+		/**
 		 * @property @typescript-eslint/no-mixed-enums=error - Readability and maintainability.
 		 * @memberOf @typescript-eslint
 		 **/
@@ -412,6 +418,12 @@ const typescriptRules = {
 		'@typescript-eslint/no-unnecessary-type-constraint': 'error',
 
 		/**
+		 * @property @typescript-eslint/no-unnecessary-type-conversion=error - Code quality.
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/no-unnecessary-type-conversion': 'error',
+
+		/**
 		 * @property @typescript-eslint/no-unsafe-argument=error - Code quality.
 		 * @memberOf @typescript-eslint
 		 **/
@@ -452,6 +464,12 @@ const typescriptRules = {
 		 * @memberOf @typescript-eslint
 		 **/
 		'@typescript-eslint/no-unsafe-return': 'error',
+
+		/**
+		 * @property @typescript-eslint/no-unsafe-type-assertion=error - Readability and maintainability.
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/no-unsafe-type-assertion': 'error',
 
 		/**
 		 * @property @typescript-eslint/no-unsafe-unary-minus=error - Code quality.
@@ -595,6 +613,12 @@ const typescriptRules = {
 		'@typescript-eslint/promise-function-async': 'off',
 
 		/**
+		 * @property @typescript-eslint/related-getter-setter-pairs=error - Readability and maintainability.
+		 * @memberOf @typescript-eslint
+		 **/
+		'@typescript-eslint/related-getter-setter-pairs': 'error',
+
+		/**
 		 * @property @typescript-eslint/require-array-sort-compare=off - Not specific to typescript.
 		 * @memberOf @typescript-eslint
 		 **/
@@ -638,12 +662,6 @@ const typescriptRules = {
 		 * @memberOf @typescript-eslint
 		 **/
 		'@typescript-eslint/triple-slash-reference': 'error',
-
-		/**
-		 * @property @typescript-eslint/typedef=off - Handled by compiler.
-		 * @memberOf @typescript-eslint
-		 **/
-		'@typescript-eslint/typedef': 'off',
 
 		/**
 		 * @property @typescript-eslint/unbound-method=error - Readability and maintainability.
